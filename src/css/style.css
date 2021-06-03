@@ -1,0 +1,154 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 910px;
+  margin: 0 auto;
+  padding-right: 10px;;
+  max-height: 100vh;
+  overflow-y: scroll;
+  
+
+
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+#add-button {
+  margin-top: 20px;
+   position:fixed;
+}
+
+.post {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+
+  padding: 20px;
+  background-color: gainsboro;
+  border-radius: 10px;
+
+  word-wrap: break-word;
+
+}
+
+.post:first-of-type {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+
+  padding-top:20px;
+}
+
+.post:last-of-type{
+  margin-bottom: 0px;
+
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.post-date, .post-location {
+  font-weight: 600;
+  font-size: smaller;
+}
+.post-date {
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+
+.post-location {
+  margin-left: 15px;
+  padding-left: 10px;
+
+  display: list-item;
+  list-style-type: '🌐';
+  
+}
+
+#modal-container {
+  z-index: 1000;
+  position: absolute;
+  margin:0;
+  left: 0;
+  right:0;
+  bottom:0;
+  top:0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0,0,0,0.5);
+}
+
+#modal-window {
+  padding:20px;
+  width: 600px;
+
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center;
+
+  background: #fff;
+}
+
+#add-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:center;
+
+}
+#post-text {
+  width:100%;
+  resize: vertical;
+}
+
+button {
+  width: 200px;
+  margin: 10px;
+  padding: 5px;
+}
+
+input, textarea {
+  padding:10px;
+}
+
+span.warning, #post-location {
+  width:100%;
+}
+
+.warning {
+  margin: 5px 0px;
+  font-size: smaller;
+  color:brown;
+}
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.1);
+  }
+  ::-webkit-scrollbar-thumb{
+    background: rgba(0,0,0,0.2);
+  }
+  ::-webkit-scrollbar-thumb:hover{
+  	background: rgba(0,0,0,0.4);
+  }
+  ::-webkit-scrollbar-thumb:active{
+  	background: rgba(0,0,0,.9);
+  }
